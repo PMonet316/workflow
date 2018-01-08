@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+
+}
+
+/******Navigation Bar******/
+
+#nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: rgb(146, 25, 194);
+}
+
+#nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  padding: 0rem 1rem;
+  text-decoration: none;
+  height: 100%;
+}
+
+.nav-button {
+  color: white;
+  height: 100%;
+  font-family: 'Roboto'
+}
+
+.nav-button:hover {
+  background-color: white;
+  transition-duration: 0.3s;
+  color: rgb(146, 25, 194);
+  height: 100%;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+#logo-image {
+  height: 25pt;
+  width: 40pt;
+}
+
+#logo-name {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+/******WELCOME PAGE******/
+
+#welcome-page-container {
+  position: relative;
+  height: 100%;
+}
+
+
+ #cover-image {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  z-index: -1
+ }
+
+ #cover-text {
+  z-index: 100;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  padding-top: 25%;
+  width: 100%;
+  color: rgb(146, 25, 194);
+  font-family: 'Forum';
+ }
+
+ #ul-cover {
+   display: flex;
+   justify-content: center
+ }
+
+ #cover-title {
+   font-size: 4rem;
+ }
+
+ .li-cover {
+   padding: 0 1rem;
+   margin-top: -3px;
+   font-size: 2rem;
+ }
+
+ /******FOOTER******/
+
+ .footer {
+   width: 100%;
+   position: absolute;
+   background-color: grey;
+   /* margin: -180px; */
+ }
+
+
+ /* #footer-logo-image {
+    height: 25pt;
+    width: 25pt;
+
+ } */
+
+
+ /******LOG IN PAGE*******/
+
+ #login-container {
+   /* position: relative; */
+   height: 700px;
+ }
+
+ .header-text {
+   text-align: center;
+ }
+
+ #login-submit {
+   text-align: center;
+
+ }
+
+  /******SIGN UP PAGE*******/
+
+  #signup-container {
+    min-height: 700px;
+  }
+
+  #signup-submit {
+    text-align: center;
+  }
+
+  .signup-text {
+    font-family: 'Roboto'
+  }
+
+  .form-two-col {
+    width: 30%;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+  .form-one-col {
+    width: 60%;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+  select {
+    width: 60%;
+    padding: 16px 20px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    height: 40px;
+  }
+
+  .submit-button {
+    width: 60%;
+    font-size: 16px;
+    background-color: rgb(146, 25, 194);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+#label-position {
+  padding: 12px 0 0 0;
+  font-family: 'Roboto';
+  font-size: 20px;
+  text-align: center;
+}
+
+#route-to-login, #route-to-signup {
+  text-align: center;
+  margin-top: -4px;
+  font-family: 'Roboto';
+}
+
+.component-link {
+  text-decoration: none;
+}
+
+/******USER PAGE******/
+
+#user-page-container {
+  min-height: 700px;
+
+}
+
+#label-project {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 16px;
+  padding-top: 16px;
+}
+
+.new-project-form {
+  text-align: right;
+  /* margin-right: 15%; */
+}
+
+ .select-type, .select-tso, .select-tsa, .select-status {
+  width: 15%;
+  height: 2rem;
+  margin: 10px 2px;
+  outline: none
+}
+
+.select-company, .input-dueDate {
+  padding: 16px 20px;
+  margin: 10px 2px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  height: 2rem;
+  width: 15%;
+  /* height: 20px; */
+  color: black;
+  outline: none
+}
+
+.notes {
+  padding: 16px 20px;
+  margin: 0px 2px;
+  border: none;
+  height: 4rem;
+  width: 77%;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  outline: none
+  /* margin-top: 30px */
+}
+
+.div-submit {
+  text-align: center;
+}
+
+.project-submit {
+  /* width: 30%; */
+  height: 6.7rem;
+  font-size: 16px;
+  background-color: rgb(34, 93, 196);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+
+.project-submit:hover {
+  background-color: rgb(21, 58, 126);
+  transition-duration: 0.1s;
+}
+.project-submit:active {
+  transform: translateY(2px) translateX(2px);
+}
+
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*****QUEUE IN PROCESS******/
+
+#queue-header {
+  display: flex;
+  justify-content: center
+}
+
+#queue-list{
+  display: flex;
+  justify-content: center
+}
+
+.title-queue, .title-notes {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 8px 20px;
+  margin: 10px 2px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(146, 25, 194);
+  font-size: 14px;
+  height: 2rem;
+  width: 10%;
+  /* height: 20px; */
+  color: white;
+  font-family: 'Roboto';
+}
+
+.title-notes {
+  width: 20%;
+
+}
+
+.user-queue, .user-notes {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 8px 20px;
+  margin: 10px 2px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-size: 13px;
+  height: 2rem;
+  width: 10%;
+  /* height: 20px; */
+  color: black;
+  font-family: 'Roboto';
+}
+
+.user-notes {
+  width: 20%;
+}
+
+.queue-complete {
+  height: 2rem;
+  width: 10%;
+}
+
+.complete-btn, .edit-btn {
+  height: 2rem;
+  width: 70%;
+  font-size: 14px;
+  color: white;
+  padding: 8px 0px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+
+.complete-btn:hover  {
+  background-color: rgb(18, 122, 4);
+  transition-duration: 0.1s;
+}
+.complete-btn:active, .edit-btn:active {
+  transform: translateY(2px) translateX(2px);
+}
+
+.complete-btn {
+  width: 70%;
+  background-color: rgb(9, 189, 84);
+  color: white;
+}
+
+.edit-btn {
+  width: 30%;
+  background-color: rgb(186, 189, 196);
+  color: white;
+
+}
+
+.edit-btn:hover {
+  background-color: rgb(27, 16, 16);
+  transition-duration: 0.1s;
+}
